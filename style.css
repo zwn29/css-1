@@ -1,0 +1,157 @@
+/* @import url('http://fonts.cdnfonts.com/css/neue-haas-grotesk-text-pro'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#app {
+  height: 100vh;
+
+  background-image: url('https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+  background-size: cover;
+}
+
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  z-index: 3;
+  position: relative;
+  padding: 2% 10%;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: auto;
+  max-width: 1200px;
+  font-size: small;
+  font-weight: 500;
+}
+
+.nav-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: auto;
+}
+
+.nav-btn {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.nav-brand div {
+  font-size: 1.5em;
+}
+
+.body-container {
+  display: flex;
+  height: 88vh;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: auto;
+  padding: 2% 10%;
+}
+
+.body-right {
+  flex: auto;
+  display: flex;
+  z-index: 3;
+}
+
+.body-left {
+  flex: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 50%;
+  position: relative;
+  z-index: 5;
+}
+
+.image-container img {
+  min-width: 40vw;
+  min-height: 50vh;
+  max-width: 70vw;
+  max-height: 70vh;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.body-left-header {
+  color: #fff;
+  line-height: 3.5em;
+}
+
+.body-left-header h1 {
+  font-size: 2.5em;
+  font-weight: 800;
+  margin-bottom: 0.5em;
+}
+
+.footer-container {
+  padding: 24px 96px;
+  height: 200vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex: auto;
+  padding: 2% 10%;
+  background-color: #000;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+@media (max-width: 500px) {
+  .body-container {
+    flex-direction: column;
+    min-height: 70vh;
+    align-content: space-between;
+    text-align: center;
+  }
+
+  .nav-container {
+    flex-direction: column;
+  }
+  .nav-items {
+    font-size: x-small;
+    font-weight: 400;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
